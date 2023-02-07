@@ -17,6 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/timio23/opencv-autocrop-photo-id.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/timio23"
+  },
   "keywords": [
     "image",
     "image processing",
