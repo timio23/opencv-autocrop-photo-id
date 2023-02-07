@@ -1,4 +1,4 @@
-# OpenCv - Face Crop : Autodetect & crop faces out of an image (Node.js)
+# OpenCV - AutoCrop Photo ID : Automatically crop faces out of an image (Node.js)
 
 <!-- ![CI](https://github.com/arghyadeep-k/opencv-autocrop-photo-id/workflows/CI/badge.svg?branch=master)
 ![codecov.io](https://codecov.io/github/arghyadeep-k/opencv-autocrop-photo-id/coverage.svg?branch=master)
