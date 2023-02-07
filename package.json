@@ -1,0 +1,44 @@
+{
+  "name": "opencv-autocrop-photo-id",
+  "version": "1.0.0",
+  "description": "Npm package to automatically crop a photo suitable for an ID card based on the subjects face.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "<rootDir>/*.js"
+    ],
+    "testTimeout": 300000
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timio23/opencv-autocrop-photo-id.git"
+  },
+  "keywords": [
+    "image",
+    "image processing",
+    "face",
+    "crop",
+    "opencv",
+    "npm",
+    "unlicense"
+  ],
+  "author": "Tim Butterfield",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/timio23/opencv-autocrop-photo-id/issues"
+  },
+  "homepage": "https://github.com/timio23/opencv-autocrop-photo-id#readme",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.4.0",
+    "opencv4js": "0.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
