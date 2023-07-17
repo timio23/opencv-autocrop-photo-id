@@ -4,7 +4,7 @@ const { writeFileSync, existsSync, statSync } = require('fs');
 
 
 
-module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality = 0.95, factor = 0, trainingSet = "./node_modules/opencv-autocrop-photo-id/resources/haarcascade_frontalface_default.xml") => {
+module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality = 0.95, factor = 0, minNeighbors = 5, trainingSet = "./node_modules/opencv-autocrop-photo-id/resources/haarcascade_frontalface_default.xml") => {
   let image, src, gray, faces, faceCascade;
   try {
     await loadOpenCV().catch((e) => { throw new Error("Error: Loading OpenCV failed.\n" + e.message) });
@@ -41,7 +41,7 @@ module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality 
     console.log("Processing...")
     let minSize = new cv.Size((src_min * 0.05), (src_min * 0.05));
     let maxSize = new cv.Size(0, 0);
-    faceCascade.detectMultiScale(gray, faces, 1.3, 5, 0, minSize, maxSize);
+    faceCascade.detectMultiScale(gray, faces, 1.3, minNeighbors, 0, minSize, maxSize);
 
     let point1, point2;
 
