@@ -113,10 +113,15 @@ module.exports = async (file, name = "output.jpg", type = "image/jpeg", quality 
     return e.message;
   }
   finally {
+    if (image) image.delete();
     if (src) src.delete();
     if (gray) gray.delete();
     if (faceCascade) faceCascade.delete();
     if (faces) faces.delete();
+    if (canvas) canvas.delete();
+    if (outputFilename) outputFilename.delete();
+    if (rect) rect.delete();
+    if (dst) dst.delete();
   }
 };
 
