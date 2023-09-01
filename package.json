@@ -1,6 +1,6 @@
 {
   "name": "opencv-autocrop-photo-id",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Npm package to automatically crop a photo suitable for an ID card based on the subjects face.",
   "main": "index.js",
   "scripts": {
